@@ -2,6 +2,7 @@ import { useState } from "react";
 
 const Main = ()=>{
     const [city,setcity] = useState("");
+    const [ alldatails, setdatails] = useState({});
     
     const onchanges = (e)=>{
         setcity(e.target.value);
@@ -15,8 +16,21 @@ const Main = ()=>{
         
         fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=994ac541710ea51e8b04dc49cd157c23`)
         .then( res=>{
-            console.log((res.json()));
-        })
+            
+            // setdatails(res);
+            // var d = res.json();
+            return res.json();
+            // console.log( d.name);
+            // console.log(res.json().responseData.name);
+            // console.log(alldatails.responseData.name);
+        }).then(
+            (data)=>{
+                setdatails(data);
+                console.log(data);
+                console.log(alldatails);
+
+            }
+        )
 
 
 
