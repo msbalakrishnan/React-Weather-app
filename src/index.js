@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Main from './components/Main';
+import 'bootstrap/dist/css/bootstrap.css';
+
 // import { Main } from './components/Main';
 // import 
 // import './components/Main.js'
