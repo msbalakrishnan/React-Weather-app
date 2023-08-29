@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Main from './components/Main';
 import 'bootstrap/dist/css/bootstrap.css';
+/* src/index.css */
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 // import { Main } from './components/Main';
 // import 
